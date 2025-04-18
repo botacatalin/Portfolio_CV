@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}My Portfolio{% endblock %}</title>
+
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/nav.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/hero.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/about.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/projects.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/skills.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/experience.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/contact.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/form.css') }}" rel="stylesheet"/>
+
+    <script defer data-domain="me.nodes.ro" src="https://plausible.io/js/script.js"></script>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><h5><span>Port</span><strong>folio</strong></h5></li>
+    </ul>
+    <ul>
+        <li><a class="secondary" href="#">Home</a></li>
+        <li><a class="secondary" href="#about">About</a></li>
+        <li><a class="secondary" href="#projects">Projects</a></li>
+        <li><a class="secondary" href="#skills">Skills</a></li>
+        <li><a class="secondary" href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer style="text-align: center; font-size: 0.8rem; color: #64748b;">
+    © 2025 Catalin Bota. All rights reserved.
+</footer>
+</body>
+</html>

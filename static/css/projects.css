@@ -1,0 +1,92 @@
+.projects-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: visible; /* Allow dropdown to show */
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Technology Tags */
+.tech-tags {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tags span {
+  background: #f0f4f8;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  color: #333;
+}
+
+/* Dropdown inside project card */
+.project-card details.dropdown,
+.project-card details.dropdown-card {
+  margin-top: 1rem;
+  background: #f8fafc;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.project-card details summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 500;
+}
+
+.project-card details ul {
+  margin-top: 0.75rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+/* More Projects (Show More Section) */
+details.more-projects {
+  margin-top: 2rem;
+}
+
+details.more-projects summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  display: inline-block;
+  background: #f8fafc;
+}
+
+details.more-projects[open] summary {
+  background: #e0f2fe;
+}

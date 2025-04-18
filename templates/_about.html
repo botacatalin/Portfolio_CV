@@ -1,0 +1,67 @@
+<section class="content-section" id="about">
+    <div class="content-grid">
+
+        <div class="content-image">
+            <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                <div class="flipper">
+                    <div class="front">
+                        <img alt="About Image" src="{{ url_for('static', filename='images/about.png') }}"/>
+                    </div>
+                    <div class="back">
+                        <img alt="Back of About Image"
+                             src="{{ url_for('static', filename='images/about_back_2.png') }}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-text">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <hr class="section-divider"/>
+
+            </div>
+            <p>
+                Based in Cluj-Napoca, Romania, I help startups, entrepreneurs, and companies turn their ideas into
+                reality by exploring solutions where
+                technology can truly make a difference.
+
+            </p>
+
+
+            <p><b>What do i do </b></p>
+            <p> From embedded systems to AI-driven automation, from enterprise platforms to solo indie projects — I
+                    build things that work and make an impact.</p>
+
+            <em>Skilled at collaborating across geographically dispersed teams in cross-cultural environments.</em>
+            <br/><br/>
+            <span class="tech-tag">Product Engineering</span>
+            <span class="tech-tag">Technical Leadership</span>
+            <span class="tech-tag">AI & Automation </span>
+            <span class="tech-tag">Embedded Development</span>
+            <span class="tech-tag">Cross-platform Apps </span>
+            <span class="tech-tag">Educational Tech</span>
+
+            <table style="font-size:0.8em;">
+                <tr>
+                    <td><strong>Name </strong><br/> Catalin Bota</td>
+                    <td>
+                        <strong>Email </strong><br/>
+                        <a href="mailto:nodes.ro@proton.me">nodes.ro@proton.me</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Location </strong><br/> Cluj-Napoca, Remote</td>
+                    <td><strong>Availability </strong><br/> Open to Remote & Freelance Opportunities</td>
+                </tr>
+            </table>
+            <div style="margin-top: 1.5rem;">
+                <a class="contrast small-button" download href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
+                   role="button">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

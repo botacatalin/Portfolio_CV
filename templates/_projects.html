@@ -1,0 +1,250 @@
+<section class="projects-section" id="projects"><br/>
+    <div class="section-header">
+        <h2>My Projects</h2>
+        <hr class="section-divider"/>
+        <p>Browse my recent projects and open-source contributions.</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Project 1: Web Applications -->
+        <div class="project-card">
+            <img alt="Web Applications" src="{{ url_for('static', filename='images/web_apps.png') }}"/>
+            <div class="card-content">
+                <h3>Web Applications</h3>
+                <p>Interactive web apps crafted for seamless user experience across devices.</p>
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>PicoCSS</span>
+                    <span>SQLite</span>
+                    <span>Docker</span>
+                    <span>Akamai Cloud</span>
+                    <span>AI Integration</span>
+                    <span>Stripe Payments</span>
+                </div>
+                <details class="dropdown">
+                    <summary class="secondary outline" role="button">View Projects</summary>
+                    <ul>
+                        <li>
+                            <a data-images="{{ url_for('static', filename='images/readyplan.eu/readyplan-eu-index.jpg') }},
+                 {{ url_for('static', filename='images/readyplan.eu/readyplan-eu-dashboard.jpg') }},
+                 {{ url_for('static', filename='images/readyplan.eu/readyplan-eu-products.jpg') }},
+                 {{ url_for('static', filename='images/readyplan.eu/readyplan-eu-support.jpg') }}"
+                               href="#"
+                               id="readyplan.eu"
+                               onclick="openModal(this)">
+                               <i class="fas fa-images fa-xs"></i>  readyplan.eu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a data-images="{{ url_for('static', filename='images/time4all.eu/time4all-eu-index.jpg') }},
+                 {{ url_for('static', filename='images/time4all.eu/time4all-eu-calendar.jpg') }}"
+                               href="#"
+                               id="time4all.eu"
+                               onclick="openModal(this)">
+                               <i class="fas fa-images fa-xs"></i>  time4all.eu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a data-images="{{ url_for('static', filename='images/dealwatch.eu/dealwatch-eu-index.jpg') }},
+                 {{ url_for('static', filename='images/dealwatch.eu/dealwatch-eu-login.jpg') }},
+ {{ url_for('static', filename='images/dealwatch.eu/dealwatch-eu-services.jpg') }}"
+                               href="#"
+                               id="dealwatch.eu"
+                               onclick="openModal(this)">
+                                <i class="fas fa-images fa-xs"></i> dealwatch.eu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://ideas.nodes.ro" target="_blank"><i class="fa fa-external-link-alt fa-xs"></i> ideas.nodes.ro</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/botacatalin/portfolio" target="_blank"><i class="fab fa-github"></i> me.nodes.ro</a>
+                        </li>
+
+                    </ul>
+                </details>
+            </div>
+        </div>
+
+        <!-- Project 2: Desktop Applications -->
+        <div class="project-card">
+            <img alt="Java Apps" src="{{ url_for('static', filename='images/desktop.png') }}"/>
+            <div class="card-content">
+                <h3>Desktop Applications</h3>
+                <p>Cross-platform apps and developer tools built for productivity.</p>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>Eclipse RCP</span>
+                    <span>Eclipse Plugins</span>
+                    <span>SWT / JFace</span>
+                    <span>Maven</span>
+                </div>
+                <details class="dropdown">
+                    <summary class="secondary outline" role="button">View Projects</summary>
+                    <ul>
+                        <li> <a href="#"><i class="fab fa-github"></i> Eclipse RCP Applications</a></li>
+                        <li> <a href="#"><i class="fab fa-github"></i> Eclipse Plugins</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> Java 2D or Lightweight Games</a></li>
+                        <li><a href="#"><i class="fa-solid fa-blog"></i> Maven Plugins</a></li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+
+        <!-- Project 3: Book -->
+        <div class="project-card">
+            <img alt="Books" src="{{ url_for('static', filename='images/books.png') }}"/>
+            <div class="card-content">
+                <hgroup>
+                    <h3>Books</h3>
+                    <p>Published children's books written in Romanian.</p>
+                </hgroup>
+                <p><a href="https://books2read.com/b/mgwJ2v" target="_blank">Povestim cu calculatorul</a></p>
+
+                <p><a href="https://books2read.com/u/bQwlLw" target="_blank">Mica carte a circuitelor </a></p>
+
+                <div class="tech-tags">
+                    <span>Language: Română</span>
+                </div>
+                <a href="https://nodes.ro/blog/fihexagon-files/povestim-cu-calculatorul.html" target="_blank">Povestim
+                    cu calculatorul - Read first chapter →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Show More Section -->
+    <details class="more-projects">
+        <summary>Show More Projects</summary>
+        <div class="projects-grid">
+            <!-- Embedded -->
+            <div class="project-card">
+                <img alt="Embedded Projects" src="{{ url_for('static', filename='images/embedded.png') }}"/>
+                <div class="card-content">
+                    <h3>Embedded Projects</h3>
+                    <p>Projects involving microcontrollers and wireless communication.</p>
+                    <div class="tech-tags">
+                        <span>Arduino</span>
+                        <span>LoRa</span>
+                        <span>SDR</span>
+                    </div>
+                    <a href="#" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog -->
+            <div class="project-card">
+                <img alt="Blog" src="{{ url_for('static', filename='images/blog.png') }}"/>
+                <div class="card-content">
+                    <h3>Tutorials and Insights</h3>
+                    <p>On tech and software development.</p>
+                    <div class="tech-tags">
+                        <span>General</span>
+                    </div>
+                    <a href="https://nodes.ro/blog/fihexagon-files/" target="_blank">View Blog <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- AI and Automation -->
+            <div class="project-card">
+                <img alt="Blog" src="{{ url_for('static', filename='images/ai.png') }}"/>
+                <div class="card-content">
+                    <h3>AI and Automation</h3>
+                    <p>Showcasing tools, scripts, or systems integration </p>
+                    <div class="tech-tags">
+                        <span>OpenAI Agents</span>
+                        <span>Make.com</span>
+                        <span>Docker Engine API</span>
+                    </div>
+                    <!--
+                    <a href="" target="_blank">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                     -->
+                </div>
+            </div>
+        </div>
+    </details>
+</section>
+
+
+<dialog id="imageModal">
+    <article>
+        <header>
+            <a aria-label="Close" class="close" href="#" onclick="closeModal()" rel="prev"></a>
+            <hgroup>
+                <h3>Project Preview</h3>
+                <em>Source code available upon request </em>
+            </hgroup>
+
+        </header>
+
+        <div id="modalGallery" style="text-align: center;">
+            <div style="margin: 0.5rem;">
+                <button class="secondary outline" onclick="prevImage()"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="secondary outline" onclick="nextImage()"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <img alt="Project Image" id="modalImage" src="" style="max-width: 100%; height: auto;"/>
+
+        </div>
+
+        <footer>
+            <button onclick="closeModal()">Close</button>
+        </footer>
+    </article>
+</dialog>
+
+
+<script>
+    let scrollPosition = 0;
+    let currentImageIndex = 0;
+    let imageList = [];
+
+    function openModal(link) {
+      scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+      // Prevent background scroll
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollPosition}px`;
+
+      const images = link.getAttribute('data-images');
+      imageList = images.split(',').map(img => img.trim());
+      currentImageIndex = 0;
+
+      showImage(currentImageIndex);
+      document.getElementById('imageModal').showModal();
+    }
+
+    function showImage(index) {
+      const modalImage = document.getElementById('modalImage');
+      if (imageList.length > 0) {
+        modalImage.src = imageList[index];
+      }
+    }
+
+    function nextImage() {
+      if (imageList.length > 0) {
+        currentImageIndex = (currentImageIndex + 1) % imageList.length;
+        showImage(currentImageIndex);
+      }
+    }
+
+    function prevImage() {
+      if (imageList.length > 0) {
+        currentImageIndex = (currentImageIndex - 1 + imageList.length) % imageList.length;
+        showImage(currentImageIndex);
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.close();
+
+      document.body.style.position = '';
+      document.body.style.top = '';
+      window.scrollTo(0, scrollPosition);
+    }
+</script>
+

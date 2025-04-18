@@ -1,0 +1,38 @@
+.contact-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.contact-card {
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  margin: 2rem auto 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item .icon {
+  background-color: rgb(14, 165, 233);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
