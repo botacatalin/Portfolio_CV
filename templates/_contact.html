@@ -1,46 +1,106 @@
-<section class="contact-section" id="contact"><br/>
-    <div class="section-header">
-        <h2>Get In Touch</h2>
-        <hr class="section-divider"/>
-        <p>Have a project in mind or want to discuss potential opportunities? Feel free to contact me!</p>
+<section class="py-24 bg-white" id="contact">
+  <div class="space-y-6 text-center">
+    <h2 class="text-3xl font-semibold text-slate-900">Get In Touch</h2>
+    <div class="mx-auto h-1 w-16 rounded-full bg-sky-600"></div>
+    <p class="mx-auto max-w-2xl text-base text-slate-600">
+      Have a project in mind or want to discuss potential opportunities? Feel free to contact me!
+    </p>
+  </div>
+
+  <div class="mt-16 grid gap-10 lg:grid-cols-[0.7fr,1.3fr]">
+    <!-- Contact Info -->
+    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md">
+      <h3 class="text-2xl font-semibold text-slate-900">Contact Information</h3>
+      <div class="mt-6 space-y-6 text-sm text-slate-700">
+        <div class="flex items-center gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+            <i class="fa-solid fa-envelope text-lg"></i>
+          </div>
+          <div>
+            <p class="font-semibold text-slate-900">Email</p>
+            <p>nodes.ro@proton.me</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+            <i class="fa-solid fa-location-dot text-lg"></i>
+          </div>
+          <div>
+            <p class="font-semibold text-slate-900">Location</p>
+            <p>Cluj-Napoca, Remote</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="contact-card">
-        <h3>Contact Information</h3>
+    <!-- Contact Form -->
+    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md">
+      <h3 class="text-2xl font-semibold text-slate-900">Send Me a Message</h3>
+      <form
+        action="https://formsubmit.co/fac47bda817bb7159f88e4d9270b3091"
+        method="POST"
+        class="mt-8 space-y-6"
+      >
+        <input name="_subject" type="hidden" value="Contact Form https://catalin.nodes.ro">
+        <input name="_captcha" type="hidden" value="true">
 
-        <div class="contact-item">
-            <i class="fa-solid fa-envelope icon"></i>
-            <div><strong>Email</strong><br><span>nodes.ro@proton.me</span></div>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div>
+            <label class="sr-only" for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Your name"
+              class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
+            />
+          </div>
+          <div>
+            <label class="sr-only" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="your@email.com"
+              class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
+            />
+          </div>
         </div>
 
-        <div class="contact-item">
-            <i class="fa-solid fa-location-dot icon"></i>
-            <div><strong>Location</strong><br><span>Cluj-Napoca, Remote</span></div>
+        <div>
+          <label class="sr-only" for="subject">Subject</label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            required
+            placeholder="Subject - Project Inquiry"
+            class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
+          />
         </div>
 
-    </div>
+        <div>
+          <label class="sr-only" for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Let's talk about your project..."
+            class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
+          ></textarea>
+        </div>
 
-    <div class="form-card" style="margin-top: 3rem;">
-        <h2>Send Me a Message</h2>
-        <form action="https://formsubmit.co/fac47bda817bb7159f88e4d9270b3091" method="POST">
-            <input name="_subject" type="hidden" value="Contact Form https://catalin.nodes.ro">
-            <input name="_captcha" type="hidden" value="true">
-            <div class="form-grid">
-                <div class="form-group">
-                    <input id="name" name="name" placeholder="Your name" required type="text"/>
-                </div>
-                <div class="form-group">
-                    <input id="email" name="email" placeholder="your@email.com" required type="email"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <input id="subject" name="subject" placeholder="Subject - Project Inquiry" required type="text"/>
-            </div>
-            <div class="form-group">
-                <textarea id="message" name="message" placeholder="Let's talk about your project..." required
-                          rows="5"></textarea>
-            </div>
-            <button class="outline" type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-        </form>
+        <button
+          type="submit"
+          class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-500"
+        >
+          Send Message
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
     </div>
+  </div>
 </section>

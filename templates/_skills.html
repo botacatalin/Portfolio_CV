@@ -1,128 +1,127 @@
-<section class="skills-section" id="skills"><br/>
-    <h2>My Technical Experience</h2>
-    <hr class="section-divider"/>
-    <p>A categorized view of the technologies I've worked with across the software development lifecycle.</p>
+<section class="py-24 bg-white" id="skills">
+  <div class="space-y-6 text-center">
+    <h2 class="text-3xl font-semibold text-slate-900">My Technical Experience</h2>
+    <div class="mx-auto h-1 w-16 rounded-full bg-sky-600"></div>
+    <p class="mx-auto max-w-2xl text-base text-slate-600">
+      A categorized view of the technologies I've worked with across the software development lifecycle.
+    </p>
+  </div>
 
-    <div class="skills-grid two-columns">
-        <!-- Left Column -->
-        <div class="column">
-
-            <div class="skill-card">
-                <hgroup>
-                    <h3>Platform & Domain Engineering</h3>
-                    <p>Domain-Specific & Code-Generation</p>
-                </hgroup>
-
-                <div class="skills-tags">
-                    <span data-tooltip="Code generation and model transformation">XText / Xtend</span>
-                    <span data-tooltip="Industrial programming standards used in automation and PLC integration">IEC 61131-3</span>
-                </div>
-            </div>
-
-
-            <div class="skill-card">
-                <h3>Database</h3>
-                <p>Designing and managing data storage solutions from lightweight embedded stores to enterprise
-                    systems.</p>
-                <div class="skills-tags">
-                    <span>Embedded(SQLite), In-memory(H2) or Enterprise-grade(Oracle)</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <hgroup>
-                    <h3>Testing & QA</h3>
-                    <p>Ensuring code correctness, performance, and user experience through automated and manual
-                        testing.</p>
-                </hgroup>
-
-                <div class="skills-tags">
-                    <span>Junit & Mockito</span>
-                    <span>UI Automation - SWTBot</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <hgroup>
-                    <h3>Version Control & Builds</h3>
-                    <p>Source management, ticket strategies, and build automation.</p>
-                </hgroup>
-                <div class="skills-tags">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Bitbucket</span>
-                    <span>Maven</span>
-                    <span>Jira</span>
-                </div>
-            </div>
+  <div class="mt-16 grid gap-8 lg:grid-cols-2">
+    <!-- Left Column -->
+    <div class="space-y-8">
+      <!-- Platform & Domain -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">Platform &amp; Domain Engineering</h3>
+        <p class="mt-2 text-sm text-slate-600">Domain-Specific &amp; Code-Generation</p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Code generation and model transformation">XText / Xtend</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Industrial programming standards used in automation and PLC integration">IEC 61131-3</span>
         </div>
+      </div>
 
-        <!-- Right Column -->
-        <div class="column">
-            <div class="skill-card">
-                <hgroup>
-                    <h3>General Purpose Languages</h3>
-                    <p>Main Programming Languages</p>
-                </hgroup>
-
-                <div class="skills-tags">
-                    <span data-tooltip="Core language for enterprise solutions, Eclipse plugin/RCP development, and DSL tooling">Java</span>
-                    <span data-tooltip=" Web applications, scripting, and automation workflows">Python</span>
-                    <span>C</span>
-                    <span>PHP</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <hgroup>
-                    <h3>Front-end</h3>
-                    <p>Focused on clean, responsive, and minimal designs</p>
-                </hgroup>
-
-                <div class="skills-tags">
-                    <span>HTML5</span>
-                    <span>CSS / PicoCSS</span>
-                    <span>JavaScript</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>DevOps & Infrastructure</h3>
-                <p>Packaging and isolating applications for consistent deployments.</p>
-                <div class="skills-tags">
-                    <span data-tooltip="deployment package">Docker</span>
-                    <span data-tooltip="cloud infrastructure">Akamai Cloud</span>
-                    <span data-tooltip="automation platform"> Make.com (Integromat)</span>
-                    <span>CI/CD Pipelines(TeamCity)</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <hgroup>
-                    <h3>Eclipse Platform & RCP Development</h3>
-                    <p>Rich Client Platform applications for custom tooling and DSL editors.</p>
-                </hgroup>
-                <div class="skills-tags">
-                    <span data-tooltip="Eclipse based Rich Client Platform applications">Eclipse Plugins & RCP</span>
-                </div>
-            </div>
-
-
+      <!-- Database -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">Database</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Designing and managing data storage solutions from lightweight embedded stores to enterprise systems.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Embedded (SQLite)</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">In-memory (H2)</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Enterprise-grade (Oracle)</span>
         </div>
-        <div class="skill-card">
-            <hgroup>
-                <h3>Core Technical &amp; Architectural Pillars</h3>
-                <p>End-to-end expertise across system design, data &amp; algorithms, APIs, security, performance and
-                    networking.</p>
-            </hgroup>
-            <div class="skills-tags">
-                <span data-tooltip="High-level system decomposition, design patterns">Software Architecture &amp; Design</span>
-                <span>Algorithms & Data Structures</span>
-                <span data-tooltip="OWASP Top-10, input/output validation">Security &amp; Compliance</span>
-                <span data-tooltip="Profiling, caching, resilience patterns">Performance &amp; Scalability</span>
-                <span data-tooltip="Logging, metrics, tracing">Observability &amp; Monitoring</span>
-                <span>Networking &amp; Protocols</span>
-            </div>
+      </div>
+
+      <!-- Testing -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">Testing &amp; QA</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Ensuring code correctness, performance, and user experience through automated and manual testing.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">JUnit &amp; Mockito</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">UI Automation - SWTBot</span>
         </div>
+      </div>
+
+      <!-- Version Control -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">Version Control &amp; Builds</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Source management, ticket strategies, and build automation.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Git</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">GitHub</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Bitbucket</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Maven</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Jira</span>
+        </div>
+      </div>
     </div>
+
+    <!-- Right Column -->
+    <div class="space-y-8">
+      <!-- Languages -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">General Purpose Languages</h3>
+        <p class="mt-2 text-sm text-slate-600">Main programming languages across different ecosystems.</p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Core language for enterprise and DSL tooling">Java</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Web applications, scripting, automation">Python</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">C</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">PHP</span>
+        </div>
+      </div>
+
+      <!-- Front-end -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">Front-end</h3>
+        <p class="mt-2 text-sm text-slate-600">Focused on clean, responsive, and minimal designs.</p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">HTML5</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Tailwind CSS</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- DevOps -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">DevOps &amp; Infrastructure</h3>
+        <p class="mt-2 text-sm text-slate-600">Packaging and isolating applications for consistent deployments.</p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Deployment package">Docker</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Cloud infrastructure">Akamai Cloud</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Automation platform">Make.com</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">CI/CD Pipelines (TeamCity)</span>
+        </div>
+      </div>
+
+      <!-- Eclipse -->
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg">
+        <h3 class="text-2xl font-semibold text-slate-900">Eclipse Platform &amp; RCP Development</h3>
+        <p class="mt-2 text-sm text-slate-600">Rich Client Platform applications for custom tooling and DSL editors.</p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Eclipse Plugins &amp; RCP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Technical -->
+    <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-md transition hover:shadow-lg lg:col-span-2">
+      <h3 class="text-2xl font-semibold text-slate-900">Core Technical &amp; Architectural Pillars</h3>
+      <p class="mt-2 text-sm text-slate-600">
+        End-to-end expertise across system design, data &amp; algorithms, APIs, security, performance, and networking.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+        <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="High-level system decomposition, design patterns">Software Architecture &amp; Design</span>
+        <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Algorithms &amp; Data Structures</span>
+        <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="OWASP Top-10, validation">Security &amp; Compliance</span>
+        <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Profiling, caching, resilience patterns">Performance &amp; Scalability</span>
+        <span class="rounded-full border border-slate-200 bg-white px-3 py-1" title="Logging, metrics, tracing">Observability &amp; Monitoring</span>
+        <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Networking &amp; Protocols</span>
+      </div>
+    </div>
+  </div>
 </section>

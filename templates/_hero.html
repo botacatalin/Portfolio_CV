@@ -1,53 +1,113 @@
-<section class="hero" id="hero">
-    <div class="hero-content">
-        <span class="tech-tag">Senior Software Engineer</span>
-        <span class="tech-tag">Technical Leader</span>
-        <span class="tech-tag">Full-Stack Creator</span>
-        <h1>Hello, I'm <span>Catalin</span></h1>
-        <p>I have been transforming ideas into software for over 15 years. </p>
-        <div class="hero-buttons">
-            <a class="contrast small-button" href="#projects" role="button">
-                <i class="fa-solid fa-folder-open"></i> View Projects
-            </a>
+<section class="relative py-24 bg-white" id="hero">
+  <div class="grid items-center gap-16 lg:grid-cols-2">
+    <!-- Left Side: Intro Text -->
+    <div class="space-y-8">
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-3">
+        <span class="inline-flex items-center rounded-full bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
+          Senior Software Engineer
+        </span>
+        <span class="inline-flex items-center rounded-full bg-sky-50 px-4 py-2 text-sm font-semibold text-slate-600">
+          Technical Leader
+        </span>
+        <span class="inline-flex items-center rounded-full bg-sky-50 px-4 py-2 text-sm font-semibold text-slate-600">
+          Full-Stack Creator
+        </span>
+      </div>
 
-            <a class="secondary small-button" download
-               href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
-               role="button">
-                <i class="fa-solid fa-download"></i> Download Resume
-            </a>
-        </div>
-        <div class="social-icons">
-            <a aria-label="Blog" data-placement="bottom" data-tooltip="My Blog"
-               href="https://botacatalin.github.io/Blog/" target="_blank">
-                <i class="fa-solid fa-blog"></i>
-            </a>
-            <a aria-label="GitHub Profile" data-tooltip="My GitHub page" data-placement="bottom"
-               href="https://github.com/botacatalin?tab=repositories" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                <a aria-label="LinkedIn Profile" data-tooltip="My Linkedin profile" data-placement="bottom"
-                   href="https://www.linkedin.com/in/catalinbota/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a aria-label="Contact" data-placement="bottom" data-tooltip="Contact me" href="#contact">
-                    <i class="fa-solid fa-envelope-open"></i>
-                </a>〚
-                <a aria-label="Facebook Profile" data-tooltip="Organization Facebook page" data-placement="bottom"
-                   href="https://www.facebook.com/profile.php?id=61573676917525"
-                   target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </a>
-            <a aria-label="GitHub Profile" data-tooltip="Organization landing page" data-placement="bottom"
-               href="https://nodes.ro" target="_blank">
-                <i class="fa-solid fa-code"></i>
-            </a> 〛
+      <!-- Heading -->
+      <div class="space-y-4">
+        <h1 class="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+          Hello, I'm <span class="text-sky-600">Catalin</span>
+        </h1>
+        <p class="text-lg leading-relaxed text-slate-600">
+          I have been transforming ideas into software for over 15 years.
+        </p>
+      </div>
 
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="#projects"
+          class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500"
+        >
+          <i class="fa-solid fa-folder-open"></i> View Projects
+        </a>
+        <a
+          download
+          href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
+          class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-sky-500 hover:text-sky-600"
+        >
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+      </div>
 
-        </div>
+      <!-- Social Icons -->
+      <div class="flex flex-wrap items-center gap-5 text-xl text-slate-500">
+        <a
+          aria-label="Blog"
+          href="https://botacatalin.github.io/Blog/"
+          target="_blank"
+          class="transition hover:text-sky-600"
+        >
+          <i class="fa-solid fa-blog"></i>
+        </a>
+        <a
+          aria-label="GitHub Profile"
+          href="https://github.com/botacatalin?tab=repositories"
+          target="_blank"
+          class="transition hover:text-sky-600"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          aria-label="LinkedIn Profile"
+          href="https://www.linkedin.com/in/catalinbota/"
+          target="_blank"
+          class="transition hover:text-sky-600"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          aria-label="Contact"
+          href="#contact"
+          class="transition hover:text-sky-600"
+        >
+          <i class="fa-solid fa-envelope-open"></i>
+        </a>
+        <a
+          aria-label="Facebook Profile"
+          href="https://www.facebook.com/profile.php?id=61573676917525"
+          target="_blank"
+          class="transition hover:text-sky-600"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          aria-label="Organization landing page"
+          href="https://nodes.ro"
+          target="_blank"
+          class="transition hover:text-sky-600"
+        >
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
     </div>
-    <div class="picture-box-wrapper">
-        <div class="picture-box">
-            <img alt="Laptop Image" src="{{ url_for('static', filename='images/laptop.png') }}"/>
-        </div>
+
+    <!-- Right Side: Image -->
+    <div class="relative">
+      <div
+        class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-10 shadow-lg"
+      >
+        <div
+          class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-2xl"
+        ></div>
+        <img
+          alt="Laptop Image"
+          class="mx-auto w-full max-w-sm rounded-2xl border border-sky-100 shadow-md"
+          src="{{ url_for('static', filename='images/laptop.png') }}"
+        />
+      </div>
     </div>
+  </div>
 </section>
