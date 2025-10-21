@@ -94,20 +94,16 @@
       <h3
         class="mb-10 flex items-center justify-center gap-3 text-xl font-semibold text-sky-700 uppercase tracking-wide"
       >
-        <i class="fab fa-github text-sky-600"></i> Open Source — Personal
+        <i class="fab fa-github text-sky-600"></i> Open Source — Git
       </h3>
 
       <div class="grid gap-10 lg:grid-cols-3">
         <!-- Each personal repo -->
         {% for project in [
           {'title': 'ESP32 Projects', 'desc': 'IoT and embedded development projects for ESP32 microcontrollers.', 'tags': ['C++', 'MIT License'], 'url': 'https://github.com/botacatalin/ESP32'},
-          {'title': 'nodes.ro Blog', 'desc': 'Static site setup and custom components powering my tech blog.', 'tags': ['HTML'], 'url': 'https://github.com/botacatalin/Blog'},
-          {'title': 'Portfolio_CV', 'desc': 'Source code for my personal portfolio website and online CV.', 'tags': ['HTML', 'GPL v3'], 'url': 'https://github.com/botacatalin/Portfolio_CV'},
-          {'title': 'job-scraping', 'desc': 'Python script that collects job listings from multiple career websites.', 'tags': ['Python', 'BSD License'], 'url': 'https://github.com/botacatalin/job-scraping'},
-          {'title': 'workflowEngine', 'desc': 'Lightweight Java workflow management engine for automation tasks.', 'tags': ['Java'], 'url': 'https://github.com/botacatalin/workflowEngine'},
-          {'title': 'USBHistory', 'desc': 'Java tool to inspect connected USB device history on local systems.', 'tags': ['Java'], 'url': 'https://github.com/botacatalin/USBHistory'},
-          {'title': 'Awesome-Hacking', 'desc': 'Curated security and pentesting resources — forked from Hack-with-Github.', 'tags': ['Security', 'CC0'], 'url': 'https://github.com/botacatalin/Awesome-Hacking'}
-        ] %}
+          {'title': 'RCP Desktop Apps', 'desc': 'Eclipse RCP desktop application template for modular, cross-platform desktop apps.', 'tags': ['Java', 'Eclipse RCP', 'Desktop'], 'url': 'https://github.com/nodes-ro/nodes-rcp-desktop'},
+
+                 ] %}
         <div
           class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
         >
@@ -140,50 +136,46 @@
 
       <div class="grid gap-10 lg:grid-cols-3">
         <!-- Books -->
-        <div
-          class="project-card flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
-        >
-          <img
-            alt="Books"
-            src="{{ url_for('static', filename='images/books.png') }}"
-            class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
-          />
-          <div class="card-content mt-6 flex flex-1 flex-col">
-            <hgroup>
-              <h3 class="text-2xl font-semibold text-slate-900">Books</h3>
-              <p class="mt-1 text-sm text-slate-600">
-                Published children's books written in Romanian.
-              </p>
-            </hgroup>
-            <p class="mt-3 text-sm text-sky-600">
-              <a
-                href="https://books2read.com/b/mgwJ2v"
-                target="_blank"
-                class="transition hover:text-sky-500"
-                >Povestim cu calculatorul</a
-              >
-            </p>
-            <p class="text-sm text-sky-600">
-              <a
-                href="https://books2read.com/u/bQwlLw"
-                target="_blank"
-                class="transition hover:text-sky-500"
-                >Mica carte a circuitelor</a
-              >
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
-              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">
-                Language: Română
-              </span>
-            </div>
-            <a
-              href="https://botacatalin.github.io/Blog/povestim-cu-calculatorul.html"
-              target="_blank"
-              class="mt-5 text-sm font-semibold text-sky-600 hover:text-sky-500"
-              >Povestim cu calculatorul — Read first chapter →</a
-            >
-          </div>
-        </div>
+       <!-- Books -->
+<div class="project-card flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40">
+  <img
+    alt="Books"
+    src="{{ url_for('static', filename='images/books.png') }}"
+    class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+  />
+  <div class="mt-6 flex flex-1 flex-col">
+    <header>
+      <h3 class="text-2xl font-semibold text-slate-900">Books</h3>
+      <p class="mt-1 text-sm text-slate-600">Children’s books published in Romanian.</p>
+    </header>
+
+    <ul class="mt-3 space-y-1 text-sm text-sky-600">
+      <li>
+        <a href="https://books2read.com/b/mgwJ2v" target="_blank" class="transition hover:text-sky-500">
+          Povestim cu calculatorul
+        </a>
+      </li>
+      <li>
+        <a href="https://books2read.com/u/bQwlLw" target="_blank" class="transition hover:text-sky-500">
+          Mica carte a circuitelor
+        </a>
+      </li>
+    </ul>
+
+    <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+      <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Language: Română</span>
+    </div>
+
+    <a
+      href="https://botacatalin.github.io/Blog/povestim-cu-calculatorul.html"
+      target="_blank"
+      class="mt-5 text-sm font-semibold text-sky-600 hover:text-sky-500"
+    >
+      Povestim cu calculatorul — Read first chapter →
+    </a>
+  </div>
+</div>
+
 
         <!-- Blog -->
         <div
