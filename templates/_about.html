@@ -1,19 +1,28 @@
-<section class="py-24 bg-white" id="about">
-  <div class="grid gap-16 lg:grid-cols-[1fr,1.1fr] items-center">
-    <!-- Image -->
+<section
+  id="about"
+  class="relative py-32 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-white to-sky-50/30"
+>
+  <div
+    class="mx-auto grid max-w-6xl items-center gap-16 rounded-3xl border border-slate-100 bg-white p-10 shadow-xl shadow-sky-100/40 lg:grid-cols-[1fr,1.1fr]"
+  >
+    <!-- Left Side: Image -->
     <div class="relative">
-      <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-lg">
-        <div class="absolute inset-0 -z-10 bg-gradient-to-br from-sky-100 via-transparent to-transparent blur-3xl"></div>
+      <div
+        class="relative overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 shadow-lg shadow-sky-100/40"
+      >
+        <div
+          class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-3xl"
+        ></div>
         <img
           alt="About Image"
-          class="w-full rounded-2xl object-cover border border-sky-100 shadow-md"
+          class="w-full rounded-2xl border border-sky-100 object-cover shadow-md"
           src="{{ url_for('static', filename='images/about.png') }}"
         />
       </div>
     </div>
 
-    <!-- Text -->
-    <div class="space-y-8">
+    <!-- Right Side: Text -->
+    <div class="space-y-10">
       <!-- Heading -->
       <div>
         <h2 class="text-3xl font-semibold text-slate-900">About Me</h2>
@@ -29,7 +38,11 @@
 
       <!-- Details -->
       <div class="space-y-4 text-slate-600">
-        <p class="text-sm uppercase tracking-[0.25em] text-sky-500 font-semibold">What do I do</p>
+        <p
+          class="text-sm uppercase tracking-[0.25em] text-sky-500 font-semibold"
+        >
+          What do I do
+        </p>
         <p>
           From embedded systems to AI-driven automation, from enterprise platforms to indie projects —
           I build things that work and make an impact.
@@ -41,23 +54,47 @@
 
       <!-- Tags -->
       <div class="flex flex-wrap gap-3">
-        <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700">Product Engineering</span>
-        <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700">Technical Leadership</span>
-        <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700">AI &amp; Automation</span>
-        <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700">Embedded Development</span>
-        <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700">Cross-platform Apps</span>
-        <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700">Educational Tech</span>
+        <span
+          class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm"
+          >Product Engineering</span
+        >
+        <span
+          class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm"
+          >Technical Leadership</span
+        >
+        <span
+          class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm"
+          >AI &amp; Automation</span
+        >
+        <span
+          class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm"
+          >Embedded Development</span
+        >
+        <span
+          class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm"
+          >Cross-platform Apps</span
+        >
+        <span
+          class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-700 shadow-sm"
+          >Educational Tech</span
+        >
       </div>
 
       <!-- Info Card -->
-      <div class="grid gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-6 text-sm text-slate-700 sm:grid-cols-2 shadow-md">
+      <div
+        class="grid gap-4 rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 text-sm text-slate-700 shadow-md shadow-sky-100/40 sm:grid-cols-2"
+      >
         <div>
           <p class="font-semibold text-slate-900">Name</p>
           <p>Catalin Bota</p>
         </div>
         <div>
           <p class="font-semibold text-slate-900">Email</p>
-          <a class="text-sky-600 transition hover:text-sky-500" href="mailto:nodes.ro@proton.me">nodes.ro@proton.me</a>
+          <a
+            class="text-sky-600 transition hover:text-sky-500"
+            href="mailto:nodes.ro@proton.me"
+            >nodes.ro@proton.me</a
+          >
         </div>
         <div>
           <p class="font-semibold text-slate-900">Location</p>
@@ -72,9 +109,9 @@
       <!-- Button -->
       <div>
         <a
-          class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500"
           download
           href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
+          class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 hover:shadow-lg"
         >
           <i class="fa-solid fa-download"></i> Download Resume
         </a>
