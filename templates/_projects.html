@@ -3,265 +3,229 @@
   class="relative py-32 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-white to-sky-50/30"
 >
   <div
-    class="mx-auto max-w-6xl  rounded-3xl border border-slate-100 bg-white p-10 shadow-xl shadow-sky-100/40"
+    class="mx-auto max-w-6xl rounded-3xl border border-slate-100 bg-white p-10 shadow-xl shadow-sky-100/40"
   >
     <!-- Section Header -->
     <div class="space-y-6 text-center">
-      <h2 class="text-3xl font-semibold text-slate-900">My Projects</h2>
+      <h2 class="text-3xl font-semibold text-slate-900">Projects & Contributions</h2>
       <div class="mx-auto h-1 w-16 rounded-full bg-sky-600"></div>
       <p class="mx-auto max-w-2xl text-base text-slate-600">
-        Browse my recent projects and open-source contributions.
+        Explore my featured platforms, open-source work, and community initiatives.
       </p>
     </div>
 
-    <!-- Project Grid -->
-    <div class="mt-16 grid gap-10 lg:grid-cols-3">
-      <!-- Card -->
-      <div
-        class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:shadow-lg hover:shadow-sky-100/40"
+    <!-- 1️⃣ FEATURED PROJECTS -->
+    <div class="mt-20">
+      <h3
+        class="mb-10 flex items-center justify-center gap-3 text-xl font-semibold text-sky-700 uppercase tracking-wide"
       >
-        <img
-          alt="Web Applications"
-          class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
-          src="{{ url_for('static', filename='images/web_apps.png') }}"
-        />
-        <div class="mt-6 flex flex-1 flex-col">
-          <h3 class="text-2xl font-semibold text-slate-900">Web Applications</h3>
-          <p class="mt-3 text-sm text-slate-600">
-            Interactive web apps crafted for seamless user experience across devices.
-          </p>
+        <i class="fa-solid fa-star text-sky-600"></i> Featured Projects
+      </h3>
 
-          <!-- Tech tags -->
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Python</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Flask</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Tailwind CSS</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">SQLite</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Docker</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Akamai Cloud</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">AI Integration</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Stripe Payments</span>
-          </div>
-
-          <!-- Details -->
-          <details
-            class="mt-6 rounded-2xl border border-slate-100 bg-white shadow-sm"
-          >
-            <summary
-              class="flex cursor-pointer items-center justify-between gap-2 px-5 py-3 text-sm font-semibold text-sky-600 focus:outline-none"
+      <div class="grid gap-10 lg:grid-cols-2">
+        <!-- edu.nodes.ro -->
+        <div
+          class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
+        >
+          <a href="https://edu.nodes.ro" target="_blank" rel="noopener noreferrer">
+            <img
+              src="{{ url_for('static', filename='images/edu.nodes.ro.png') }}"
+              alt="edu.nodes.ro"
+              class="h-48 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm transition hover:opacity-90"
+            />
+          </a>
+          <div class="mt-6 flex flex-1 flex-col">
+            <h4 class="text-2xl font-semibold text-slate-900">edu.nodes.ro</h4>
+            <p class="mt-3 text-sm text-slate-600">
+              Whether you’re a teacher seeking extra classroom activities, a parent looking for interactive resources for your kids, or simply curious to explore a topic further, your learning journey continues here.            </p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Python</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Flask</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">PostgreSQL</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Docker</span>
+            </div>
+            <a
+              href="https://edu.nodes.ro"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-sky-600 transition hover:text-sky-500"
             >
-              View Projects <i class="fa-solid fa-chevron-down text-xs"></i>
-            </summary>
-            <ul class="space-y-3 px-5 pb-5 text-sm text-slate-700">
-              <li>
-                <a
-                  class="flex items-center gap-2 transition hover:text-sky-600"
-                  data-images="{{ url_for('static', filename='images/readyplan.eu/readyplan-eu-index.jpg') }}, {{ url_for('static', filename='images/readyplan.eu/readyplan-eu-dashboard.jpg') }}, {{ url_for('static', filename='images/readyplan.eu/readyplan-eu-products.jpg') }}, {{ url_for('static', filename='images/readyplan.eu/readyplan-eu-support.jpg') }}"
-                  href="#"
-                  onclick="openModal(this)"
-                >
-                  <i class="fas fa-images fa-xs"></i> readyplan.eu
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex items-center gap-2 transition hover:text-sky-600"
-                  data-images="{{ url_for('static', filename='images/time4all.eu/time4all-eu-index.jpg') }}, {{ url_for('static', filename='images/time4all.eu/time4all-eu-calendar.jpg') }}"
-                  href="#"
-                  onclick="openModal(this)"
-                >
-                  <i class="fas fa-images fa-xs"></i> time4all.eu
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex items-center gap-2 transition hover:text-sky-600"
-                  data-images="{{ url_for('static', filename='images/dealwatch.eu/dealwatch-eu-index.jpg') }}, {{ url_for('static', filename='images/dealwatch.eu/dealwatch-eu-login.jpg') }}, {{ url_for('static', filename='images/dealwatch.eu/dealwatch-eu-services.jpg') }}"
-                  href="#"
-                  onclick="openModal(this)"
-                >
-                  <i class="fas fa-images fa-xs"></i> dealwatch.eu
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex items-center gap-2 transition hover:text-sky-600"
-                  href="https://ideas.nodes.ro"
-                  target="_blank"
-                >
-                  <i class="fa fa-external-link-alt fa-xs"></i> ideas.nodes.ro
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex items-center gap-2 transition hover:text-sky-600"
-                  href="https://github.com/botacatalin/Portfolio_CV"
-                  target="_blank"
-                >
-                  <i class="fab fa-github"></i> me.nodes.ro
-                </a>
-              </li>
-            </ul>
-          </details>
+              <i class="fa-solid fa-external-link"></i> Visit edu.nodes.ro
+            </a>
+          </div>
+        </div>
+
+        <!-- time4all.nodes.ro -->
+        <div
+          class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
+        >
+          <a href="https://time4all.nodes.ro" target="_blank" rel="noopener noreferrer">
+            <img
+              src="{{ url_for('static', filename='images/time4all.nodes.ro.png') }}"
+              alt="time4all.nodes.ro"
+              class="h-48 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm transition hover:opacity-90"
+            />
+          </a>
+          <div class="mt-6 flex flex-1 flex-col">
+            <h4 class="text-2xl font-semibold text-slate-900">time4all.nodes.ro</h4>
+            <p class="mt-3 text-sm text-slate-600">
+              Effortlessly coordinate meetings and events worldwide. Find the perfect time that works for everyone — in seconds.             </p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Python</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Flask</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">FullCalendar</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">AI Integration</span>
+            </div>
+            <a
+              href="https://time4all.nodes.ro"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-sky-600 transition hover:text-sky-500"
+            >
+              <i class="fa-solid fa-external-link"></i> Visit time4all.nodes.ro
+            </a>
+          </div>
         </div>
       </div>
+    </div>
 
-      <!-- Second Card -->
-      <div
-        class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:shadow-lg hover:shadow-sky-100/40"
+    <!-- 2️⃣ PERSONAL OPEN SOURCE -->
+    <div class="mt-24">
+      <h3
+        class="mb-10 flex items-center justify-center gap-3 text-xl font-semibold text-sky-700 uppercase tracking-wide"
       >
-        <img
-          alt="Desktop Apps"
-          class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
-          src="{{ url_for('static', filename='images/desktop.png') }}"
-        />
-        <div class="mt-6 flex flex-1 flex-col">
-          <h3 class="text-2xl font-semibold text-slate-900">Desktop Applications</h3>
-          <p class="mt-3 text-sm text-slate-600">
-            Cross-platform apps and developer tools built for productivity.
-          </p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Java</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Eclipse RCP</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Plugins</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">SWT / JFace</span>
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Maven</span>
-          </div>
+        <i class="fab fa-github text-sky-600"></i> Open Source — Personal
+      </h3>
 
-          <details
-            class="mt-6 rounded-2xl border border-slate-100 bg-white shadow-sm"
-          >
-            <summary
-              class="flex cursor-pointer items-center justify-between gap-2 px-5 py-3 text-sm font-semibold text-sky-600 focus:outline-none"
-            >
-              View Projects <i class="fa-solid fa-chevron-down text-xs"></i>
-            </summary>
-            <ul class="space-y-3 px-5 pb-5 text-sm text-slate-700">
-              <li>
-                <a
-                  class="flex items-center gap-2 transition hover:text-sky-600"
-                  href="https://nodes-ro.github.io/nodes-rcp-desktop/"
-                  target="_blank"
-                >
-                  <i class="fab fa-github"></i> Eclipse RCP Apps
-                </a>
-              </li>
-              <li>
-                <a class="flex items-center gap-2 transition hover:text-sky-600" href="#">
-                  <i class="fab fa-github"></i> Eclipse Plugins
-                </a>
-              </li>
-              <li>
-                <a class="flex items-center gap-2 transition hover:text-sky-600" href="#">
-                  <i class="fab fa-github"></i> Java Tools
-                </a>
-              </li>
-              <li>
-                <a class="flex items-center gap-2 transition hover:text-sky-600" href="#">
-                  <i class="fa-solid fa-blog"></i> Maven Plugins
-                </a>
-              </li>
-            </ul>
-          </details>
-        </div>
-      </div>
-
-      <!-- Third Card -->
-      <div
-        class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:shadow-lg hover:shadow-sky-100/40"
-      >
-        <img
-          alt="Books"
-          class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
-          src="{{ url_for('static', filename='images/books.png') }}"
-        />
-        <div class="mt-6 flex flex-1 flex-col">
-          <h3 class="text-2xl font-semibold text-slate-900">Books</h3>
-          <p class="mt-3 text-sm text-slate-600">
-            Published children's books written in Romanian.
-          </p>
-          <p class="mt-4 text-sm text-sky-600">
-            <a
-              class="transition hover:text-sky-500"
-              href="https://books2read.com/b/mgwJ2v"
-              target="_blank"
-              >Povestim cu calculatorul</a
-            >
-          </p>
-          <p class="text-sm text-sky-600">
-            <a
-              class="transition hover:text-sky-500"
-              href="https://books2read.com/u/bQwlLw"
-              target="_blank"
-              >Mica carte a circuitelor</a
-            >
-          </p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
-            <span class="rounded-full border border-slate-200 bg-white px-3 py-1"
-              >Language: Română</span
-            >
+      <div class="grid gap-10 lg:grid-cols-3">
+        <!-- Each personal repo -->
+        {% for project in [
+          {'title': 'ESP32 Projects', 'desc': 'IoT and embedded development projects for ESP32 microcontrollers.', 'tags': ['C++', 'MIT License'], 'url': 'https://github.com/botacatalin/ESP32'},
+          {'title': 'nodes.ro Blog', 'desc': 'Static site setup and custom components powering my tech blog.', 'tags': ['HTML'], 'url': 'https://github.com/botacatalin/Blog'},
+          {'title': 'Portfolio_CV', 'desc': 'Source code for my personal portfolio website and online CV.', 'tags': ['HTML', 'GPL v3'], 'url': 'https://github.com/botacatalin/Portfolio_CV'},
+          {'title': 'job-scraping', 'desc': 'Python script that collects job listings from multiple career websites.', 'tags': ['Python', 'BSD License'], 'url': 'https://github.com/botacatalin/job-scraping'},
+          {'title': 'workflowEngine', 'desc': 'Lightweight Java workflow management engine for automation tasks.', 'tags': ['Java'], 'url': 'https://github.com/botacatalin/workflowEngine'},
+          {'title': 'USBHistory', 'desc': 'Java tool to inspect connected USB device history on local systems.', 'tags': ['Java'], 'url': 'https://github.com/botacatalin/USBHistory'},
+          {'title': 'Awesome-Hacking', 'desc': 'Curated security and pentesting resources — forked from Hack-with-Github.', 'tags': ['Security', 'CC0'], 'url': 'https://github.com/botacatalin/Awesome-Hacking'}
+        ] %}
+        <div
+          class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
+        >
+          <h4 class="text-xl font-semibold text-slate-900">{{ project.title }}</h4>
+          <p class="mt-3 text-sm text-slate-600">{{ project.desc }}</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+            {% for tag in project.tags %}
+            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">{{ tag }}</span>
+            {% endfor %}
           </div>
           <a
-            class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-sky-600 transition hover:text-sky-500"
-            href="https://botacatalin.github.io/Blog/povestim-cu-calculatorul.html"
+            href="{{ project.url }}"
             target="_blank"
+            class="mt-5 text-sm font-semibold text-sky-600 hover:text-sky-500"
           >
-            Povestim cu calculatorul — Read first chapter →
+            <i class="fab fa-github"></i> View Repo
           </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- 3️⃣ OTHER INITIATIVES -->
+    <div class="mt-24">
+      <h3
+        class="mb-10 flex items-center justify-center gap-3 text-xl font-semibold text-sky-700 uppercase tracking-wide"
+      >
+        <i class="fa-solid fa-lightbulb text-sky-600"></i> Other Initiatives
+      </h3>
+
+      <div class="grid gap-10 lg:grid-cols-3">
+        <!-- Books -->
+        <div
+          class="project-card flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
+        >
+          <img
+            alt="Books"
+            src="{{ url_for('static', filename='images/books.png') }}"
+            class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+          />
+          <div class="card-content mt-6 flex flex-1 flex-col">
+            <hgroup>
+              <h3 class="text-2xl font-semibold text-slate-900">Books</h3>
+              <p class="mt-1 text-sm text-slate-600">
+                Published children's books written in Romanian.
+              </p>
+            </hgroup>
+            <p class="mt-3 text-sm text-sky-600">
+              <a
+                href="https://books2read.com/b/mgwJ2v"
+                target="_blank"
+                class="transition hover:text-sky-500"
+                >Povestim cu calculatorul</a
+              >
+            </p>
+            <p class="text-sm text-sky-600">
+              <a
+                href="https://books2read.com/u/bQwlLw"
+                target="_blank"
+                class="transition hover:text-sky-500"
+                >Mica carte a circuitelor</a
+              >
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1">
+                Language: Română
+              </span>
+            </div>
+            <a
+              href="https://botacatalin.github.io/Blog/povestim-cu-calculatorul.html"
+              target="_blank"
+              class="mt-5 text-sm font-semibold text-sky-600 hover:text-sky-500"
+              >Povestim cu calculatorul — Read first chapter →</a
+            >
+          </div>
+        </div>
+
+        <!-- Blog -->
+        <div
+          class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
+        >
+          <img
+            src="{{ url_for('static', filename='images/blog.png') }}"
+            alt="Blog"
+            class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+          />
+          <div class="mt-6 flex flex-1 flex-col">
+            <h4 class="text-2xl font-semibold text-slate-900">Blog</h4>
+            <p class="mt-3 text-sm text-slate-600">
+              Tutorials, research, and development articles.
+            </p>
+            <a
+              href="https://botacatalin.github.io/Blog/tags/index.html"
+              target="_blank"
+              class="mt-5 text-sm font-semibold text-sky-600 hover:text-sky-500"
+            >
+              Browse Blog →
+            </a>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div
+          class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
+        >
+          <img
+            src="{{ url_for('static', filename='images/ai.png') }}"
+            alt="AI & Automation"
+            class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+          />
+          <div class="mt-6 flex flex-1 flex-col">
+            <h4 class="text-2xl font-semibold text-slate-900">AI & Automation</h4>
+            <p class="mt-3 text-sm text-slate-600">
+              Exploring AI agents, automation workflows, and system integrations.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Modal -->
-  <dialog
-    id="imageModal"
-    class="rounded-3xl border border-slate-100 bg-white text-slate-800 shadow-2xl shadow-sky-100/40 [&::backdrop]:bg-slate-900/50"
-  >
-    <article class="space-y-6 p-6">
-      <header class="flex items-start justify-between gap-6">
-        <div>
-          <h3 class="text-xl font-semibold text-slate-900">Project Preview</h3>
-          <p class="text-sm text-slate-500">Source code available upon request</p>
-        </div>
-        <button
-          aria-label="Close"
-          class="rounded-full border border-slate-200 p-2 text-slate-600 transition hover:border-sky-500 hover:text-sky-600"
-          onclick="closeModal()"
-        >
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </header>
-      <div class="space-y-4 text-center">
-        <div class="flex justify-center gap-4">
-          <button
-            class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-700 transition hover:border-sky-500 hover:text-sky-600"
-            onclick="prevImage()"
-          >
-            <i class="fa-solid fa-arrow-left"></i> Prev
-          </button>
-          <button
-            class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-700 transition hover:border-sky-500 hover:text-sky-600"
-            onclick="nextImage()"
-          >
-            Next <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-        <img
-          id="modalImage"
-          alt="Project Image"
-          class="mx-auto w-full max-h-[60vh] rounded-2xl border border-slate-200 object-contain shadow"
-          src=""
-        />
-      </div>
-      <footer class="text-right">
-        <button
-          class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-sky-500"
-          onclick="closeModal()"
-        >
-          Close
-        </button>
-      </footer>
-    </article>
-  </dialog>
 </section>
