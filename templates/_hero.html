@@ -1,125 +1,188 @@
 <section
-        class="relative py-32 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-white to-sky-50/40"
-        id="hero"
+  class="relative py-32 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-white to-sky-50/40"
+  id="hero"
 >
-    <div
-            class="mx-auto grid max-w-6xl items-center gap-16 rounded-3xl border border-slate-100 bg-white p-10 shadow-xl shadow-sky-100/40 lg:grid-cols-2"
-    >
-        <!-- Left Side: Intro Text -->
-        <div class="space-y-10">
-            <!-- Tags -->
-            <div class="flex flex-wrap gap-3">
-              <span
-                      class="inline-flex items-center rounded-full  px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm"
-              >
-                Senior Software Engineer
-              </span>
-                <span
-                      class="inline-flex items-center rounded-full px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm"
-                >
-                Technical Leader
-              </span>
-                            <span
-                      class="inline-flex items-center rounded-full px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm"
-                            >
-                Full-Stack Creator
-              </span>
+  <div
+    class="mx-auto grid max-w-6xl items-center gap-16 rounded-3xl border border-slate-100 bg-white p-10 shadow-xl shadow-sky-100/40 lg:grid-cols-2"
+  >
+    <!-- Left Side: Intro Text -->
+    <div class="space-y-10">
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-3">
+        <span
+          class="inline-flex items-center rounded-full px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm"
+        >
+          Senior Software Engineer
+        </span>
+        <span
+          class="inline-flex items-center rounded-full px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm"
+        >
+          Technical Leader
+        </span>
+        <span
+          class="inline-flex items-center rounded-full px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm"
+        >
+          Full-Stack Creator
+        </span>
 
-                <span class="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm">
-                  <i class="fa-solid fa-mug-saucer text-sky-600"></i>
-                  Coffee Enthusiast
-                </span>
-            </div>
+        <span
+          class="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium text-sky-700 shadow-sm"
+        >
+          <i class="fa-solid fa-mug-saucer text-sky-600"></i>
+          Coffee Enthusiast
+        </span>
+      </div>
 
-            <!-- Heading -->
-            <div class="space-y-4">
-                <h1
-                        class="text-4xl font-semibold tracking-tight text-slate-900 sm:text-4xl"
-                >
-                    Hello, I'm <span class="text-sky-600 font-bold ">Catalin</span>
-                </h1>
-                <p class="text-lg leading-relaxed text-slate-600">
-                    I like transforming <span class="text-sky-600">ideas</span> into <span class="text-sky-600">software</span> fellow engineers enjoy <i>maintaining</i>, people enjoy <i>using</i>, and computers can <i>run</i> for a long time — ideally without catching fire.
-                </p>
-            </div>
+      <!-- Heading -->
+      <div class="space-y-4">
+        <h1
+          class="text-4xl font-semibold tracking-tight text-slate-900 sm:text-4xl"
+        >
+          Hello, I'm <span class="text-sky-600 font-bold">Catalin</span>
+        </h1>
+        <p class="text-lg leading-relaxed text-slate-600">
+          I like transforming
+          <span class="text-sky-600">ideas</span> into
+          <span class="text-sky-600">software</span> fellow engineers enjoy
+          <i>maintaining</i>, people enjoy <i>using</i>, and computers can
+          <i>run</i> for a long time — ideally without catching fire.
+        </p>
+      </div>
 
-            <!-- Buttons -->
-            <div class="flex flex-wrap gap-4">
-                <a
-                        class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 hover:shadow-lg"
-                        href="#projects"
-                >
-                    <i class="fa-solid fa-folder-open"></i> View Projects
-                </a>
-                <a
-                        class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-sky-500 hover:text-sky-600"
-                        download
-                        href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
-                >
-                    <i class="fa-solid fa-download"></i> Download Resume
-                </a>
-            </div>
-
-            <!-- Social Icons -->
-            <div class="flex flex-wrap items-center gap-5 text-xl text-slate-500">
-                <a
-                        aria-label="Blog"
-                        class="transition hover:text-sky-600"
-                        href="https://botacatalin.github.io/Blog/"
-                        target="_blank"
-                ><i class="fa-solid fa-blog"></i
-                ></a>
-                <a
-                        aria-label="GitHub Profile"
-                        class="transition hover:text-sky-600"
-                        href="https://github.com/botacatalin?tab=repositories"
-                        target="_blank"
-                ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                        aria-label="LinkedIn Profile"
-                        class="transition hover:text-sky-600"
-                        href="https://www.linkedin.com/in/catalinbota/"
-                        target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-                ></a>
-                <a
-                        aria-label="Contact"
-                        class="transition hover:text-sky-600"
-                        href="#contact"
-                ><i class="fa-solid fa-envelope-open"></i
-                ></a>
-                <a
-                        aria-label="Facebook Profile"
-                        class="transition hover:text-sky-600"
-                        href="https://www.facebook.com/profile.php?id=61573676917525"
-                        target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-                ></a>
-                <a
-                        aria-label="Organization landing page"
-                        class="transition hover:text-sky-600"
-                        href="https://nodes.ro"
-                        target="_blank"
-                ><i class="fa-solid fa-code"></i
-                ></a>
-            </div>
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-4 items-center">
+        <!-- Unified Resume Actions (Now First) -->
+        <div
+          class="inline-flex items-center rounded-full border border-slate-300 bg-white text-sm font-semibold text-slate-700 shadow-sm overflow-hidden"
+        >
+          <button
+            id="view-resume-btn"
+            class="flex items-center gap-2 px-5 py-3 transition hover:bg-sky-50 hover:text-sky-600"
+          >
+            <i class="fa-solid fa-eye"></i> View Resume
+          </button>
+          <div class="w-px h-6 bg-slate-200"></div>
+          <a
+            class="flex items-center gap-2 px-5 py-3 transition hover:bg-sky-50 hover:text-sky-600"
+            download
+            href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
+          >
+            <i class="fa-solid fa-download"></i>
+          </a>
         </div>
 
-        <!-- Right Side: Image -->
-        <div class="relative">
-            <div
-                    class="relative overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-slate-50 p-10 shadow-lg shadow-sky-100/50"
-            >
-                <div
-                        class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-3xl"
-                ></div>
-                <img
-                        alt="Laptop Image"
-                        class="mx-auto w-full max-w-sm rounded-2xl border border-sky-100 shadow-md"
-                        src="{{ url_for('static', filename='images/laptop.png') }}"
-                />
-            </div>
-        </div>
+        <!-- View Projects -->
+        <a
+          class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 hover:shadow-lg"
+          href="#projects"
+        >
+          <i class="fa-solid fa-folder-open"></i> View Projects
+        </a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex flex-wrap items-center gap-5 text-xl text-slate-500">
+        <a
+          aria-label="Blog"
+          class="transition hover:text-sky-600"
+          href="https://botacatalin.github.io/Blog/"
+          target="_blank"
+          ><i class="fa-solid fa-blog"></i
+        ></a>
+        <a
+          aria-label="GitHub Profile"
+          class="transition hover:text-sky-600"
+          href="https://github.com/botacatalin?tab=repositories"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <a
+          aria-label="Contact"
+          class="transition hover:text-sky-600"
+          href="#contact"
+          ><i class="fa-solid fa-envelope-open"></i
+        ></a>
+           <a
+          aria-label="LinkedIn Profile"
+          class="transition hover:text-sky-600"
+          href="https://www.linkedin.com/in/catalinbota/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          aria-label="Facebook Profile"
+          class="transition hover:text-sky-600"
+          href="https://www.facebook.com/profile.php?id=61573676917525"
+          target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+
+      </div>
     </div>
+
+    <!-- Right Side: Image -->
+    <div class="relative">
+      <div
+        class="relative overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-slate-50 p-10 shadow-lg shadow-sky-100/50"
+      >
+        <div
+          class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-3xl"
+        ></div>
+        <img
+          alt="Laptop Image"
+          class="mx-auto w-full max-w-sm rounded-2xl border border-sky-100 shadow-md"
+          src="{{ url_for('static', filename='images/laptop.png') }}"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Modal -->
+  <dialog
+    id="resume-modal"
+    class="rounded-2xl shadow-2xl p-0 w-11/12 max-w-4xl backdrop:bg-slate-900/50 backdrop:backdrop-blur-sm"
+  >
+    <div class="relative bg-white rounded-2xl overflow-hidden animate-fadeIn">
+      <!-- Object with Fallback -->
+      <object
+        data="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
+        type="application/pdf"
+        class="w-full h-[80vh] rounded-b-2xl"
+      >
+        <div class="p-6 text-center text-slate-600">
+          <p class="text-base mb-2 font-semibold">
+            Your browser cannot display the PDF file.
+          </p>
+          <p class="text-sm">
+            You can
+            <a
+              href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2025.pdf') }}"
+              download
+              class="text-sky-600 underline hover:text-sky-500"
+              >download the resume here</a
+            >.
+          </p>
+        </div>
+      </object>
+
+      <!-- Close Button (Bottom Right, High Contrast) -->
+      <button
+        id="close-resume-btn"
+        class="absolute bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-sky-600 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 hover:shadow-lg"
+      >
+        <i class="fa-solid fa-xmark text-lg"></i> Close
+      </button>
+    </div>
+  </dialog>
+
+  <!-- JS -->
+  <script>
+    const viewBtn = document.getElementById("view-resume-btn");
+    const closeBtn = document.getElementById("close-resume-btn");
+    const modal = document.getElementById("resume-modal");
+    viewBtn.addEventListener("click", () => modal.showModal());
+    closeBtn.addEventListener("click", () => modal.close());
+  </script>
+
 </section>
