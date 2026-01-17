@@ -89,11 +89,15 @@
         <div
           class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-3xl"
         ></div>
-        <img
-          alt="Laptop Image"
-          class="mx-auto w-full max-w-sm rounded-2xl border border-sky-100 shadow-md"
-          src="{{ url_for('static', filename='images/laptop.png') }}"
-        />
+        <picture>
+          <source srcset="{{ url_for('static', filename='images/laptop.webp') }}" type="image/webp">
+          <img
+            alt="Laptop Image"
+            class="mx-auto w-full max-w-sm rounded-2xl border border-sky-100 shadow-md"
+            src="{{ url_for('static', filename='images/laptop.png') }}"
+            loading="lazy"
+          />
+        </picture>
       </div>
 
       <!-- Social Icons (Moved to Right Side) -->
