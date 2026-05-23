@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% block title %}My Portfolio{% endblock %}</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -9,6 +10,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5.5rem;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      overflow-x: hidden;
+    }
+
+    img,
+    picture,
+    object {
+      max-width: 100%;
+    }
+
     .text-brand {
       @apply text-sky-600;
     }
@@ -16,10 +33,10 @@
       @apply bg-sky-600;
     }
     .section-shell {
-      @apply relative bg-gradient-to-b from-white to-sky-50/30 px-6 py-6 sm:px-10 sm:py-8 lg:px-12 lg:py-10;
+      @apply relative bg-gradient-to-b from-white to-sky-50/30 px-4 py-4 sm:px-8 sm:py-8 lg:px-12 lg:py-10;
     }
     .section-card {
-      @apply mx-auto max-w-6xl rounded-3xl border border-slate-100 bg-white p-8 shadow-xl shadow-sky-100/40 sm:p-10;
+      @apply mx-auto max-w-6xl rounded-3xl border border-slate-100 bg-white p-5 shadow-xl shadow-sky-100/40 sm:p-8 lg:p-10;
     }
     .section-heading {
       @apply pt-0;
@@ -44,16 +61,22 @@
     .animate-fadeIn {
       animation: fadeIn 0.3s ease-out;
     }
+
+    @media (max-width: 639px) {
+      .section-card {
+        border-radius: 1.5rem;
+      }
+    }
   </style>
 
 
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-poppins antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
   <!-- Navbar -->
   <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:py-4">
       <a class="text-2xl font-semibold tracking-tight text-slate-900" href="#hero">
         <span class="text-sky-600">Port</span><span class="font-bold">folio</span>
       </a>
@@ -83,7 +106,7 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="mx-auto max-w-5xl space-y-6 px-4 py-6 sm:space-y-8 sm:py-8">
+  <main class="mx-auto max-w-6xl space-y-4 px-3 py-4 sm:space-y-8 sm:px-4 sm:py-8">
     {% block content %}{% endblock %}
   </main>
 

@@ -3,7 +3,7 @@
   class="section-shell"
 >
   <div
-    class="section-card grid items-center gap-16 lg:grid-cols-[1fr,1.1fr]"
+    class="section-card grid items-center gap-10 lg:gap-16 lg:grid-cols-[1fr,1.1fr]"
   >
     <!-- Left Side: Image -->
     <div class="relative">
@@ -26,7 +26,7 @@
     </div>
 
     <!-- Right Side: Text -->
-    <div class="space-y-10">
+    <div class="space-y-8 sm:space-y-10">
       <!-- Heading -->
       <div class="section-heading">
         <h2 class="section-title text-3xl font-semibold text-slate-900">About Me</h2>
@@ -86,7 +86,7 @@
 
       <!-- Info Card -->
       <div
-        class="grid gap-4 rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 text-sm text-slate-700 shadow-md shadow-sky-100/40 sm:grid-cols-2"
+        class="grid gap-4 rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-5 text-sm text-slate-700 shadow-md shadow-sky-100/40 sm:grid-cols-2 sm:p-6"
       >
         <div>
           <p class="font-semibold text-slate-900">Name</p>
@@ -110,11 +110,11 @@
         </div>
 
              <!-- Button -->
-      <div>
+      <div class="sm:col-span-2">
         <a
           download
           href="{{ url_for('static', filename='docs/CV_CatalinBota_En_2026.pdf') }}"
-          class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 hover:shadow-lg"
+          class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-center text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 hover:shadow-lg sm:w-auto"
         >
           <i class="fa-solid fa-download"></i> Download Resume
         </a>
