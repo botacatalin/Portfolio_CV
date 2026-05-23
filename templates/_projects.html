@@ -1,13 +1,13 @@
 <section
   id="projects"
-  class="relative py-32 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-white to-sky-50/30"
+  class="section-shell"
 >
   <div
-    class="mx-auto max-w-6xl rounded-3xl border border-slate-100 bg-white p-10 shadow-xl shadow-sky-100/40"
+    class="section-card"
   >
     <!-- Section Header -->
-    <div class="space-y-6 text-center">
-      <h2 class="text-3xl font-semibold text-slate-900">Projects & Contributions</h2>
+    <div class="section-heading space-y-6 text-center">
+      <h2 class="section-title text-3xl font-semibold text-slate-900">Projects & Contributions</h2>
       <div class="mx-auto h-1 w-16 rounded-full bg-sky-600"></div>
       <p class="mx-auto max-w-2xl text-base text-slate-600">
         Explore my featured platforms, open-source work, and community initiatives.
@@ -39,7 +39,7 @@
             </picture>
           </a>
           <div class="mt-6 flex flex-1 flex-col">
-            <h4 class="text-2xl font-semibold text-slate-900">edu.nodes.ro</h4>
+            <h4 class="category-title text-2xl font-semibold text-slate-900">edu.nodes.ro</h4>
             <p class="mt-3 text-sm text-slate-600">
               Whether you’re a teacher seeking extra classroom activities, a parent looking for interactive resources for your kids, or simply curious to explore a topic further, your learning journey continues here.            </p>
             <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
@@ -76,7 +76,7 @@
             </picture>
           </a>
           <div class="mt-6 flex flex-1 flex-col">
-            <h4 class="text-2xl font-semibold text-slate-900">time4all.nodes.ro</h4>
+            <h4 class="category-title text-2xl font-semibold text-slate-900">time4all.nodes.ro</h4>
             <p class="mt-3 text-sm text-slate-600">
               Effortlessly coordinate meetings and events worldwide. Find the perfect time that works for everyone — in seconds.             </p>
             <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
@@ -117,7 +117,7 @@
         <div
           class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
         >
-          <h4 class="text-xl font-semibold text-slate-900">{{ project.title }}</h4>
+          <h4 class="category-title text-xl font-semibold text-slate-900">{{ project.title }}</h4>
           <p class="mt-3 text-sm text-slate-600">{{ project.desc }}</p>
           <div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
             {% for tag in project.tags %}
@@ -171,7 +171,7 @@
   </picture>
   <div class="mt-6 flex flex-1 flex-col">
     <header>
-      <h3 class="text-2xl font-semibold text-slate-900">Books</h3>
+      <h3 class="category-title text-2xl font-semibold text-slate-900">Books</h3>
       <p class="mt-1 text-sm text-slate-600">Children’s books published in Romanian.</p>
     </header>
 
@@ -217,7 +217,7 @@
             />
           </picture>
           <div class="mt-6 flex flex-1 flex-col">
-            <h4 class="text-2xl font-semibold text-slate-900">Blog</h4>
+            <h4 class="category-title text-2xl font-semibold text-slate-900">Blog</h4>
             <p class="mt-3 text-sm text-slate-600">
               Tutorials, research, and development articles.
             </p>
@@ -245,7 +245,7 @@
             />
           </picture>
           <div class="mt-6 flex flex-1 flex-col">
-            <h4 class="text-2xl font-semibold text-slate-900">AI & Automation</h4>
+            <h4 class="category-title text-2xl font-semibold text-slate-900">AI & Automation</h4>
             <p class="mt-3 text-sm text-slate-600">
               Exploring AI agents, automation workflows, and system integrations.
             </p>
