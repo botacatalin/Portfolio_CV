@@ -1,0 +1,51 @@
+# IntelliJ IDEA / PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test, coverage, and type-checking caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+
+# Flask instance data
+instance/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# macOS
+.DS_Store

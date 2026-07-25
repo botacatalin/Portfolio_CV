@@ -6,22 +6,41 @@
     class="section-card grid items-center gap-10 lg:gap-16 lg:grid-cols-[1fr,1.1fr]"
   >
     <!-- Left Side: Image -->
-    <div class="relative">
+    <div class="relative mx-auto w-full max-w-sm">
       <div
-        class="relative overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 shadow-lg shadow-sky-100/40"
+        class="relative overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white shadow-lg shadow-sky-100/40"
       >
         <div
           class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-3xl"
         ></div>
-        <picture>
-          <source srcset="{{ url_for('static', filename='images/about.webp') }}" type="image/webp">
-          <img
-            alt="About Image"
-            class="w-full rounded-2xl border border-sky-100 object-cover shadow-md"
-            src="{{ url_for('static', filename='images/about.png') }}"
-            loading="lazy"
-          />
-        </picture>
+          <button
+            type="button"
+            id="about-image-toggle"
+            class="about-flip block aspect-square w-full rounded-2xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
+            aria-label="Show portrait of Catalin Bota"
+            aria-pressed="false"
+          >
+            <span class="about-flip-inner relative block h-full w-full">
+              <img
+                alt="Developer terminal illustration"
+                class="about-flip-face collection-image absolute inset-0 h-full"
+                src="{{ url_for('static', filename='images/about.webp') }}"
+                width="1200"
+                height="1200"
+                decoding="async"
+                loading="lazy"
+              />
+              <img
+                alt="Portrait of Catalin Bota"
+                class="about-flip-face about-flip-back collection-image absolute inset-0 h-full"
+                src="{{ url_for('static', filename='images/me.webp') }}"
+                width="1024"
+                height="1024"
+                decoding="async"
+                loading="lazy"
+              />
+            </span>
+          </button>
       </div>
     </div>
 
@@ -125,3 +144,18 @@
     </div>
   </div>
 </section>
+
+<script>
+  const aboutImageToggle = document.getElementById('about-image-toggle');
+
+  if (aboutImageToggle) {
+    aboutImageToggle.addEventListener('click', () => {
+      const isFlipped = aboutImageToggle.classList.toggle('is-flipped');
+      aboutImageToggle.setAttribute('aria-pressed', String(isFlipped));
+      aboutImageToggle.setAttribute(
+        'aria-label',
+        isFlipped ? 'Show developer illustration' : 'Show portrait of Catalin Bota'
+      );
+    });
+  }
+</script>

@@ -48,6 +48,32 @@
     .category-title {
       @apply pt-1;
     }
+    .collection-image {
+      @apply w-full rounded-2xl border border-sky-100/70 bg-white object-cover shadow-sm;
+    }
+    .about-flip {
+      perspective: 75rem;
+    }
+    .about-flip-inner {
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.2, 0.75, 0.25, 1);
+    }
+    .about-flip.is-flipped .about-flip-inner {
+      transform: rotateY(180deg);
+    }
+    .about-flip-face {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .about-flip-back {
+      transform: rotateY(180deg);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .about-flip-inner {
+        transition-duration: 0.01ms;
+      }
+    }
 
     @keyframes fadeIn {
       from {
@@ -107,7 +133,7 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="mx-auto max-w-[68rem] space-y-4 px-4 py-4 sm:space-y-8 sm:px-6 sm:py-8">
+  <main class="mx-auto max-w-5xl space-y-4 px-5 py-4 sm:space-y-8 sm:px-8 sm:py-8">
     {% block content %}{% endblock %}
   </main>
 

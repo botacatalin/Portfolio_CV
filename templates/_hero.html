@@ -3,10 +3,10 @@
   id="hero"
 >
   <div
-    class="section-card grid items-center gap-10 lg:gap-16 lg:grid-cols-2"
+    class="section-card grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-10 xl:gap-16"
   >
     <!-- Left Side: Intro Text -->
-    <div class="space-y-8 sm:space-y-10">
+    <div class="min-w-0 space-y-8 sm:space-y-10">
       <!-- Tags -->
       <div class="flex flex-wrap gap-3">
         <span
@@ -45,7 +45,7 @@
           <span class="text-sky-600">ideas</span> into
           <span class="text-sky-600">software</span> fellow engineers enjoy
           <i>maintaining</i>, people enjoy <i>using</i>, and computers can
-          <i>run</i> for a long time — ideally without catching fire.
+          <i>run</i> for a long time <i class="fa-solid fa-lightbulb"></i> ideally without catching fire.
         </p>
       </div>
 
@@ -82,22 +82,22 @@
     </div>
 
     <!-- Right Side: Image + Social Icons -->
-    <div class="relative flex flex-col items-center lg:items-end">
+    <div class="relative flex min-w-0 w-full flex-col items-center">
       <div
-        class="relative overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-slate-50 p-6 sm:p-8 lg:p-10 shadow-lg shadow-sky-100/50"
+        class="relative mx-auto w-full overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-slate-50 p-4 shadow-lg shadow-sky-100/50 sm:p-6 lg:p-8"
       >
         <div
           class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-3xl"
         ></div>
-        <picture>
-          <source srcset="{{ url_for('static', filename='images/laptop.webp') }}" type="image/webp">
           <img
-            alt="Laptop Image"
-            class="mx-auto w-full max-w-sm rounded-2xl border border-sky-100 shadow-md"
-            src="{{ url_for('static', filename='images/laptop.png') }}"
-            loading="lazy"
+            alt="Modern software development workspace illustration"
+            class="collection-image mx-auto aspect-square"
+            src="{{ url_for('static', filename='images/laptop.webp') }}"
+            width="800"
+            height="800"
+            decoding="async"
+            fetchpriority="high"
           />
-        </picture>
       </div>
 
       <!-- Social Icons (Moved to Right Side) -->

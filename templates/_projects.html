@@ -160,15 +160,15 @@
       <div class="grid gap-8 lg:gap-10 lg:grid-cols-2">
         <!-- Books -->
 <div class="project-card flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 sm:p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40">
-  <picture>
-    <source srcset="{{ url_for('static', filename='images/books.webp') }}" type="image/webp">
     <img
-      alt="Books"
-      src="{{ url_for('static', filename='images/books.png') }}"
-      class="aspect-[3/2] w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+      alt="Published books illustration"
+      src="{{ url_for('static', filename='images/books.webp') }}"
+      class="collection-image aspect-square object-center"
+      width="1200"
+      height="1200"
+      decoding="async"
       loading="lazy"
     />
-  </picture>
   <div class="mt-6 flex flex-1 flex-col">
     <header>
       <h3 class="category-title text-2xl font-semibold text-slate-900">Books</h3>
@@ -223,15 +223,15 @@
         <div
           class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 sm:p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
         >
-          <picture>
-            <source srcset="{{ url_for('static', filename='images/blog.webp') }}" type="image/webp">
             <img
-              src="{{ url_for('static', filename='images/blog.png') }}"
-              alt="Blog"
-              class="aspect-[3/2] w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+              src="{{ url_for('static', filename='images/blog.webp') }}"
+              alt="Technical writing and blog illustration"
+              class="collection-image aspect-square object-center"
+              width="1200"
+              height="1200"
+              decoding="async"
               loading="lazy"
             />
-          </picture>
           <div class="mt-6 flex flex-1 flex-col">
             <h4 class="category-title text-2xl font-semibold text-slate-900">Blog</h4>
             <p class="mt-3 text-sm text-slate-600">
