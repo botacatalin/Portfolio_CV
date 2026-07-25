@@ -111,7 +111,7 @@
         {% for project in [
           {'title': 'Embedded Projects', 'desc': 'IoT and embedded development projects for ESP32 microcontrollers.', 'tags': ['C', 'MIT License'], 'url': 'https://github.com/botacatalin/ESP32'},
           {'title': 'RCP Desktop Apps', 'desc': 'Eclipse RCP desktop application template for modular, cross-platform desktop apps.', 'tags': ['Java', 'Eclipse RCP', 'Desktop'], 'url': 'https://github.com/nodes-ro/nodes-rcp-desktop'},
-          {'title': 'AI Innovation Board', 'desc': 'AI Support Ideas Platform — Share your thoughts, upvote what inspires you, and spark creativity together. ', 'tags': ['AI', 'Python', 'Flask', 'SQLite'], 'url': 'https://github.com/nodes-ro/Ideas'},
+          {'title': 'AI & Automation', 'desc': 'Exploring AI agents and automation workflows, to build AI-assisted applications and improve software development processes.', 'tags': ['OpenRouter', 'OpenCode'], 'url': 'https://github.com/botacatalin/opencode-ai-env'},
 
                  ] %}
         <div
@@ -127,6 +127,7 @@
           <a
             href="{{ project.url }}"
             target="_blank"
+            rel="noopener noreferrer"
             class="mt-5 text-sm font-semibold text-sky-600 hover:text-sky-500"
           >
             <i class="fab fa-github"></i> View Repo
@@ -156,16 +157,15 @@
         <i class="fa-solid fa-lightbulb text-sky-600"></i> Other Initiatives
       </h3>
 
-      <div class="grid gap-8 lg:gap-10 lg:grid-cols-3">
+      <div class="grid gap-8 lg:gap-10 lg:grid-cols-2">
         <!-- Books -->
-       <!-- Books -->
 <div class="project-card flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 sm:p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40">
   <picture>
     <source srcset="{{ url_for('static', filename='images/books.webp') }}" type="image/webp">
     <img
       alt="Books"
       src="{{ url_for('static', filename='images/books.png') }}"
-      class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+      class="aspect-[3/2] w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
       loading="lazy"
     />
   </picture>
@@ -177,14 +177,21 @@
 
     <ul class="mt-3 space-y-1 text-sm text-sky-600">
       <li>
-        <a href="https://books2read.com/b/mgwJ2v" target="_blank" class="transition hover:text-sky-500">
-          Povestim cu calculatorul
+        <a href="https://codeberg.org/botacatalin/PovestimCuCalculatorul"
+           target="_blank"
+           class="inline-flex items-center gap-2 transition hover:text-sky-500">
+          <i class="fa-brands fa-git-alt"></i>
+          <span>Povestim cu calculatorul</span>
         </a>
       </li>
       <li>
-        <a href="https://books2read.com/u/bQwlLw" target="_blank" class="transition hover:text-sky-500">
-          Mica carte a circuitelor
+        <a href="https://codeberg.org/botacatalin/MiciiIngineri"
+           target="_blank"
+           class="inline-flex items-center gap-2 transition hover:text-sky-500">
+          <i class="fa-brands fa-git-alt"></i>
+          <span> Micii ingineri - O Introducere in lumea electronicii </span>
         </a>
+
       </li>
     </ul>
 
@@ -193,11 +200,12 @@
     </div>
 
     <a
-      href="https://botacatalin.github.io/Blog/povestim-cu-calculatorul.html"
+      href="https://botacatalin.codeberg.page/PovestimCuCalculatorul/"
       target="_blank"
+      rel="noopener noreferrer"
       class="mt-5 text-sm font-semibold text-sky-600 hover:text-sky-500"
     >
-      Povestim cu calculatorul — Read first chapter →
+      Povestim Cu Calculatorul — Read the full book →
     </a>
   </div>
 </div>
@@ -212,7 +220,7 @@
             <img
               src="{{ url_for('static', filename='images/blog.png') }}"
               alt="Blog"
-              class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
+              class="aspect-[3/2] w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
               loading="lazy"
             />
           </picture>
@@ -231,26 +239,6 @@
           </div>
         </div>
 
-        <!-- AI -->
-        <div
-          class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 sm:p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
-        >
-          <picture>
-            <source srcset="{{ url_for('static', filename='images/ai.webp') }}" type="image/webp">
-            <img
-              src="{{ url_for('static', filename='images/ai.png') }}"
-              alt="AI & Automation"
-              class="h-44 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm"
-              loading="lazy"
-            />
-          </picture>
-          <div class="mt-6 flex flex-1 flex-col">
-            <h4 class="category-title text-2xl font-semibold text-slate-900">AI & Automation</h4>
-            <p class="mt-3 text-sm text-slate-600">
-              Exploring AI agents, automation workflows, and system integrations.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
