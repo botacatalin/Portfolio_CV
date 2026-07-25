@@ -5,7 +5,6 @@
   <div
     class="section-card grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-10 xl:gap-16"
   >
-    <!-- Left Side: Intro Text -->
     <div class="min-w-0 space-y-8 sm:space-y-10">
       <!-- Tags -->
       <div class="flex flex-wrap gap-3">
@@ -56,6 +55,7 @@
           class="inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white text-sm font-semibold text-slate-700 shadow-sm overflow-hidden sm:w-auto"
         >
           <button
+            type="button"
             id="view-resume-btn"
             class="flex min-w-0 flex-1 items-center justify-center gap-2 px-5 py-3 transition hover:bg-sky-50 hover:text-sky-600"
           >
@@ -81,7 +81,6 @@
       </div>
     </div>
 
-    <!-- Right Side: Image + Social Icons -->
     <div class="relative flex min-w-0 w-full flex-col items-center">
       <div
         class="relative mx-auto w-full overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-slate-50 p-4 shadow-lg shadow-sky-100/50 sm:p-6 lg:p-8"
@@ -90,7 +89,7 @@
           class="absolute inset-0 -z-10 bg-gradient-to-tr from-sky-100 via-transparent to-transparent blur-3xl"
         ></div>
           <img
-            alt="Modern software development workspace illustration"
+            alt="Laptop displaying source code in a bright workspace"
             class="collection-image mx-auto aspect-square"
             src="{{ url_for('static', filename='images/laptop.webp') }}"
             width="800"
@@ -100,7 +99,7 @@
           />
       </div>
 
-      <!-- Social Icons (Moved to Right Side) -->
+      <!-- Social links -->
       <div
         class="mt-8 flex flex-wrap justify-center lg:justify-end gap-5 text-xl text-slate-500"
       >
@@ -109,6 +108,7 @@
           class="transition hover:text-sky-600"
           href="https://botacatalin.github.io/Blog/"
           target="_blank"
+          rel="noopener noreferrer"
           ><i class="fa-solid fa-blog"></i
         ></a>
         <a
@@ -116,6 +116,7 @@
           class="transition hover:text-sky-600"
           href="https://github.com/nodes-ro"
           target="_blank"
+          rel="noopener noreferrer"
           ><i class="fa-brands fa-github"></i
         ></a>
         <a
@@ -129,6 +130,7 @@
           class="transition hover:text-sky-600"
           href="https://www.linkedin.com/in/catalinbota/"
           target="_blank"
+          rel="noopener noreferrer"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
         <a
@@ -136,6 +138,7 @@
           class="transition hover:text-sky-600"
           href="https://www.facebook.com/profile.php?id=61573676917525"
           target="_blank"
+          rel="noopener noreferrer"
           ><i class="fa-brands fa-facebook"></i
         ></a>
       </div>
@@ -172,6 +175,7 @@
 
       <!-- Close Button (Bottom Right, High Contrast) -->
       <button
+        type="button"
         id="close-resume-btn"
         class="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-sky-600 px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-sky-500 hover:shadow-lg sm:right-6 sm:top-auto sm:bottom-6 sm:px-5 sm:py-3"
       >

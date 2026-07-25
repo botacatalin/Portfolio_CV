@@ -27,26 +27,11 @@
       max-width: 100%;
     }
 
-    .text-brand {
-      @apply text-sky-600;
-    }
-    .bg-brand {
-      @apply bg-sky-600;
-    }
     .section-shell {
       @apply relative bg-gradient-to-b from-white to-sky-50/30 px-4 py-4 sm:px-8 sm:py-8 lg:px-12 lg:py-10;
     }
     .section-card {
-      @apply mx-auto max-w-6xl rounded-3xl border border-slate-100 bg-white p-5 shadow-xl shadow-sky-100/40 sm:p-8 lg:p-10;
-    }
-    .section-heading {
-      @apply pt-0;
-    }
-    .section-title {
-      @apply pt-0;
-    }
-    .category-title {
-      @apply pt-1;
+      @apply mx-auto rounded-3xl border border-slate-100 bg-white p-5 shadow-xl shadow-sky-100/40 sm:p-8 lg:p-10;
     }
     .collection-image {
       @apply w-full rounded-2xl border border-sky-100/70 bg-white object-cover shadow-sm;
@@ -95,8 +80,6 @@
       }
     }
   </style>
-
-
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -107,13 +90,13 @@
       <a class="text-2xl font-semibold tracking-tight text-slate-900" href="#hero">
         <span class="text-sky-600">Port</span><span class="font-bold">folio</span>
       </a>
-      <button aria-controls="main-navigation" aria-expanded="false"
+      <button type="button" aria-controls="main-navigation" aria-expanded="false"
               class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 text-slate-700 lg:hidden"
               id="menu-toggle">
         <span class="sr-only">Toggle navigation</span>
         <i class="fa-solid fa-bars"></i>
       </button>
-      <ul class="hidden items-center gap-6 text-l font-medium text-slate-700 lg:flex" id="main-navigation">
+      <ul class="hidden items-center gap-6 text-base font-medium text-slate-700 lg:flex" id="main-navigation">
         <li><a class="transition hover:text-sky-600" href="#hero">Home</a></li>
         <li><a class="transition hover:text-sky-600" href="#about">About</a></li>
         <li><a class="transition hover:text-sky-600" href="#projects">Projects</a></li>
@@ -148,15 +131,15 @@
 
     if (menuToggle && mobileMenu) {
       menuToggle.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('hidden');
-        menuToggle.setAttribute('aria-expanded', !isOpen);
-        menuToggle.innerHTML = isOpen ? '<i class="fa-solid fa-bars"></i>' : '<i class="fa-solid fa-xmark"></i>';
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuToggle.setAttribute('aria-expanded', String(!isHidden));
+        menuToggle.innerHTML = isHidden ? '<i class="fa-solid fa-bars"></i>' : '<i class="fa-solid fa-xmark"></i>';
       });
 
       mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
-          menuToggle.setAttribute('aria-expanded', false);
+          menuToggle.setAttribute('aria-expanded', 'false');
           menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
         });
       });
