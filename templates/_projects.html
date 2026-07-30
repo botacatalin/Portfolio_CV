@@ -106,9 +106,39 @@
       </h3>
 
       <div class="grid gap-8 lg:gap-10 lg:grid-cols-3">
+        <!-- Embedded projects collection -->
+        <div
+          class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 sm:p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
+        >
+          <h4 class="pt-1 text-xl font-semibold text-slate-900">Embedded Projects</h4>
+          <p class="mt-3 text-sm text-slate-600">
+            IoT and embedded development projects for Raspberry Pi Pico microcontrollers.
+          </p>
+
+          <ul class="mt-5 space-y-4 text-sm">
+            <li>
+              <a
+                href="https://github.com/botacatalin/wifi_pico2"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 font-semibold text-sky-600 transition hover:text-sky-500"
+              >
+                <i class="fab fa-github"></i> WiFi Pico 2
+              </a>
+              <p class="mt-1 text-slate-600">
+                MicroPython firmware that connects a Raspberry Pi Pico 2 W to Wi-Fi and serves a local dashboard.
+              </p>
+            </li>
+          </ul>
+
+          <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">MicroPython</span>
+            <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Pico 2 W</span>
+          </div>
+        </div>
+
         <!-- Each personal repo -->
         {% for project in [
-          {'title': 'Embedded Projects', 'desc': 'IoT and embedded development projects for ESP32 microcontrollers.', 'tags': ['C', 'MIT License'], 'url': 'https://github.com/botacatalin/ESP32'},
           {'title': 'RCP Desktop Apps', 'desc': 'Eclipse RCP desktop application template for modular, cross-platform desktop apps.', 'tags': ['Java', 'Eclipse RCP', 'Desktop'], 'url': 'https://github.com/nodes-ro/nodes-rcp-desktop'},
           {'title': 'AI & Automation', 'desc': 'Exploring AI agents and automation workflows to build AI-assisted applications and improve software development processes.', 'tags': ['OpenRouter', 'OpenCode'], 'url': 'https://github.com/botacatalin/opencode-ai-env'},
 
