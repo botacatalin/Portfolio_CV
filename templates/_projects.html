@@ -64,12 +64,15 @@
           class="flex flex-col rounded-3xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-6 sm:p-8 shadow-md shadow-sky-100/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-100/40"
         >
           <a href="https://glowgrid.nodes.ro" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source srcset="{{ url_for('static', filename='images/glowgrid.nodes.ro.webp') }}" type="image/webp">
               <img
                 src="{{ url_for('static', filename='images/glowgrid.nodes.ro.png') }}"
                 alt="glowgrid.nodes.ro"
                 class="h-48 w-full rounded-2xl border border-sky-100 object-cover object-center shadow-sm transition hover:opacity-90"
                 loading="lazy"
               />
+            </picture>
           </a>
           <div class="mt-6 flex flex-1 flex-col">
             <h4 class="pt-1 text-2xl font-semibold text-slate-900">glowgrid.nodes.ro</h4>
